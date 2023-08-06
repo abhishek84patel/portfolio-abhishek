@@ -170,11 +170,11 @@ button:hover {
     width: 100%;
 }
 
-.right {
+/* .right {
     width: 100%;
     position: relative;
     min-height: 400px;
-}
+} */
 
 .fixed {
 
@@ -185,9 +185,8 @@ button:hover {
 
 .right img {
     position: absolute;
-    top: 40%;
-    left: 50%;
-    transform: translate(-50%, -36%);
+
+    /* transform: translate(-50%, -36%); */
 
     max-width: 300px;
     width: 100%;
@@ -197,12 +196,23 @@ button:hover {
 
 .right img:nth-child(2) {
 
-    top: 30%;
+    top: -10%;
+    left: 50%;
+    transform: translateX(-50%);
+
+}
+
+.right img:nth-child(3) {
+
+    top: -10%;
+    left: 50%;
+    transform: translateX(-50%);
+
 }
 
 .right .img1 {
     z-index: 1;
-    transform: translate(-50%, -0%);
+
     max-width: 600px;
 
     position: relative;
@@ -226,18 +236,21 @@ button:hover {
     display: flex;
     align-items: center;
     gap: 1rem;
-    padding: 10px 20px;
+    padding: 4px 15px;
     background: white;
-
-    border-radius: 20px;
-
+    border-radius: 10px;
     position: absolute;
     top: 0;
-    left: 60%;
+
+}
+
+.a1 {
+    right: 20px;
+
 }
 
 .a2 {
-    left: 11%;
+
     z-index: 1;
     top: 78%;
 }
@@ -519,10 +532,10 @@ h2 {
         width: 100%;
     }
 
-    .a1 {
+    /* .a1 {
         left: 50%;
         padding: 0;
-    }
+    } */
 
     /* service  section will start*/
     .ser {
