@@ -154,15 +154,15 @@ button:hover {
 .right-wrapper::before {
     content: ' ';
     position: absolute;
-    width: 50%;
-    max-width: 22rem;
+    width: 14rem;
+
     height: 14rem;
     border-radius: 50%;
     background: #edd0ff;
     filter: blur(212px);
     z-index: -9;
     top: 0%;
-   right: 0;
+    right: 0;
     /* transform: translate(-50%, 0); */
     filter: blur(72px);
 }
@@ -265,8 +265,8 @@ button:hover {
 .ser::before {
     content: ' ';
     position: absolute;
-    width: 50%;
-    max-width: 22rem;
+    width: 16rem;
+    
     height: 16rem;
     border-radius: 50%;
     background: #edd0ff;
@@ -274,7 +274,7 @@ button:hover {
     z-index: -9;
     top: 10%;
     right: 10px;
-    
+
     filter: blur(72px);
 }
 
@@ -370,10 +370,10 @@ h2 {
 
     text-align: center;
 
+    transition: all ease-in 500ms;
 }
 
 .ser .card:hover {
-    transition: all cubic-bezier(0.77, 0, 0.175, 1) 1s;
     background: transparent;
     border: 6px solid rgb(147 147 141 / 22%);
     box-shadow: 5px 3px 0px 0px #bfbbbb;
@@ -460,6 +460,8 @@ h2 {
     font-size: 1.1rem;
 }
 
+
+
 @media screen and (max-width:768px) {
 
     .navcl>nav>ul {
@@ -524,10 +526,6 @@ h2 {
         width: 100%;
     }
 
-    /* .a1 {
-        left: 50%;
-        padding: 0;
-    } */
 
     /* service  section will start*/
     .ser {
@@ -559,9 +557,15 @@ h2 {
         flex-direction: column;
     }
 
-    /* .ser {
-        overflow: hidden;
-    } */
 
 
+
+}
+@media screen and (max-width:960px) {
+    .ser .cards .two{
+        position: unset;
+    }
+    .ser .cards .three{
+        position: unset;
+    }
 }
