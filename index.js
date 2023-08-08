@@ -5,7 +5,6 @@ const m_icon = document.getElementById("m-img");
 function showMenu() {
     const ar = arguments[0]
     ar.classList.toggle("fixed")
-    console.log()
     menu.classList.toggle("show");
 
 
@@ -14,7 +13,4 @@ function showMenu() {
 // its a arrow function
 let downloadfile = () => {
     let f = document.getElementById("file").click();
-    // console.log(f)
-    // alert(f)
-
 };
