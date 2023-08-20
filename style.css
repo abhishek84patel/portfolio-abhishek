@@ -474,18 +474,12 @@ h2 {
 @media screen and (max-width:768px) {
 
     .navcl>nav>ul {
-        display: none;
-    }
-
-    .navcl>nav>.show {
-
-        position: fixed;
+    position: fixed;
         left: -100%;
         top: 0;
         width: 100%;
         background: rgba(245, 243, 245, 0.314);
         backdrop-filter: blur(5px);
-        left: 50%;
         transform: translate(-50%, 0);
         align-items: center;
         min-height: 100vh;
@@ -496,6 +490,11 @@ h2 {
         z-index: 2;
         justify-content: center;
         transition: all 500ms ease;
+    }
+
+    .navcl>nav>.show {
+
+        
     }
 .active{
     left:0;
