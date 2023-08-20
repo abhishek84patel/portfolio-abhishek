@@ -480,7 +480,7 @@ h2 {
     .navcl>nav>.show {
 
         position: fixed;
-        left: 0;
+        left: -100%;
         top: 0;
         width: 100%;
         background: rgba(245, 243, 245, 0.314);
@@ -495,8 +495,11 @@ h2 {
         align-content: stretch;
         z-index: 2;
         justify-content: center;
+        transition: left 500ms ease;
     }
-
+.active{
+    left:0;
+}
     .navcl .m-icon {
 
         background: linear-gradient(180deg, #fdc50f 26.71%, #fb982f 99.36%);
