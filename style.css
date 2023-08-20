@@ -473,7 +473,7 @@ h2 {
 
 @media screen and (max-width:768px) {
 
-    .navcl>nav>ul {
+    .navcl>nav {
     position: fixed;
         left: -100%;
         top: 0;
