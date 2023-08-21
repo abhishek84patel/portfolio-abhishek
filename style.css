@@ -479,7 +479,7 @@ h2 {
 
     .navcl>nav>.show {
         position: fixed;
-        left: -100%;
+        left: 0;
         top: 0;
         width: 100%;
         background: rgba(245, 243, 245, 0.314);
