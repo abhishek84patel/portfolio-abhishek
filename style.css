@@ -473,32 +473,33 @@ h2 {
 
 @media screen and (max-width:768px) {
 
-    .navcl>nav {
-    
+    .navcl>nav>ul {
+        display: none;
     }
 
     .navcl>nav>.show {
+
         position: fixed;
-        left: 0;
+        /* left: 0; */
         top: 0;
         width: 100%;
         background: rgba(245, 243, 245, 0.314);
         backdrop-filter: blur(5px);
-        transform: translate(-50%, 0);
+        left: -100%;
+        z-index: 1;
         align-items: center;
         min-height: 100vh;
         padding: 20px;
         flex-direction: column;
         display: flex;
-        align-content: stretch;
-        z-index: 2;
+       
         justify-content: center;
-        transition: all 500ms ease;
-        
+        transition: all 500ms ease-in-out;
     }
-.active{
-    left:0;
-}
+    .navcl>nav>.active{
+        left: 0;
+    }
+
     .navcl .m-icon {
 
         background: linear-gradient(180deg, #fdc50f 26.71%, #fb982f 99.36%);
