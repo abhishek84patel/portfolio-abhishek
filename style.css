@@ -521,7 +521,7 @@ h2 {
     box-shadow: var(--boxShadow);
     width: 350px;
     height: 350px;
-    position: relative;
+
     z-index: 1;
 }
 
@@ -569,9 +569,9 @@ h2 {
     border-radius: 50%;
     position: absolute;
 
-    right: -40px;
-    top: 50%;
-    transform: translateY(-50%);
+    right: 0;
+    top: 0;
+
     border: 5px solid #ebebeb;
     box-shadow: var(--smboxShadow);
 
@@ -727,4 +727,32 @@ h2 {
     .ser::before {
         top: 50%;
     }
+}
+
+@media(max-width:400px) {
+    .skill-wrapper .box:nth-child(2) {
+        width: 100%;
+        height: 90vw;
+        background-color: #242D49;
+    }
+
+    .skill-wrapper .box {
+        width: 50vw;
+        height: 50vw;
+    }
+
+    .skill-wrapper .inner-box:nth-child(3) {
+        width: 25vw;
+        height: 25vw;
+    }
+
+    .skill-wrapper .inner-box:nth-child(1) {
+        height: 30vw;
+        width: 30vw;
+    }
+    .boxs{
+        height: 170vw;
+    }
+
+
 }
