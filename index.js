@@ -1,7 +1,5 @@
 const menu = document.querySelector(".nav");
-// const m_icon = document.getElementById("m-img");
-
-// it is called normal and anynomus function
+const btnCv = document.querySelector(".btn-cv")
 function showMenu() {
     const ar = arguments[0]
     ar.classList.toggle("fixed")
@@ -10,7 +8,16 @@ function showMenu() {
 
 
 }
-// its a arrow function
-let downloadfile = () => {
-    let f = document.getElementById("file").click();
-};
+btnCv.addEventListener("click", () => {
+    const cv = "resume/abhishek_resume.pdf";
+
+    let link = document.createElement("a");
+    link.download = "Abhsihek_Patel_Resume";
+    link.href = cv;
+    link.click();
+
+})
+// let downloadfile = () => {
+//     let f = document.getElementById("file").click();
+// };
+
